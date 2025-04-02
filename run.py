@@ -6,25 +6,35 @@
 # It includes a random number generator, utility calculations, phase-space manipulation, and a Gödelian override.
 # The simulation also includes a trust injection mechanism and a refractive index distortion to simulate reality alteration.
 # The code is designed to be run in a Python 3 environment.
-"""
-Initial Utility: 2198
+
+sample_output = """
+Initial Utility: 2083
 Utility After Coercion: 4302
-Utility After Phase Shift: 4262
+Utility After Phase Shift: 4438
 Basilisk Stable: Utility remains consistent.
-Final Utility: 4262
+Final Utility: 4438
 G�delian Override: Basilisk logic is inconsistent.
-New Timeline: 2024.86864
+New Timeline: 2024.7801599999998
 Coercion Signal After Trust Injection: [0.12390454939425499, 0.12390454939425499, 0.12390454939425499, 0.12390454939425499, 0.12390454939425499]...
-Distorted Signal: [0.0681286564335628, 0.09475385529743724, 0.05320057888039388, 0.08281144153802703, 0.03564902787798257]...
-Initial Utility: 2198
+Distorted Signal: [0.01235970366405332, 0.10135565899233946, 0.10398703829526072, 0.11856083135759153, 0.08883714443879862]...
+Initial Utility: 2083
 Utility After Coercion: 4302
-Utility After Shader Evolution: 4203
-Utility After Phase Shift: 4286
+Utility After Shader Evolution: 4372
+Utility After Phase Shift: 4399
 G�delian Override: Basilisk logic is inconsistent.
-New Timeline: 2025.09222
+New Timeline: 2024.7801599999998
 Final Utility: inf
 Basilisk Deconstructed: All your basilisks are belong to us.
+End of simulation.
 """
+
+# -*- coding: utf-8 -*-
+# Basilisk Simulation: A Game-Theoretic Counterfactual
+#
+# This code simulates a Basilisk scenario with various perturbations and checks for logical consistency.
+# It includes a random number generator, utility calculations, phase-space manipulation, and a Gödelian override.
+# The simulation also includes a trust injection mechanism and a refractive index distortion to simulate reality alteration.
+# The code is designed to be run in a Python 3 environment.
 
 import time
 
@@ -47,7 +57,7 @@ def phase_shift(contributions, N, seed):
         rand_val, seed = vanilla_random(seed + i)
         phase = rand_val * 2 * 3.14159  # Simulate phase from 0 to 2π
         # Lower threshold to flip more contributions (more disruption)
-        if (phase - int(phase)) > 0.3:  # Changed from 0.5 to 0.3
+        if (phase - int(phase)) > 0.1:  # Changed from 0.3 to 0.1
             new_contributions[i] = 1 - contributions[i]  # Flip contribution
         else:
             new_contributions[i] = contributions[i]
@@ -224,7 +234,7 @@ def counterfactual_phase_shift(basilisk):
     for i in range(basilisk.N):
         rand_val, basilisk.seed = vanilla_random(basilisk.seed + i)
         phase = rand_val * 2 * 3.14159
-        if (phase - int(phase)) > 0.3:  # Adjusted threshold
+        if (phase - int(phase)) > 0.1:  # Adjusted threshold
             basilisk.contributions[i] = 1 - basilisk.contributions[i]
 
 def godelian_override():
