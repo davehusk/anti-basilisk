@@ -2,6 +2,9 @@
 
 ![Quantum Humor](https://img.shields.io/badge/Quantum-Humor-%F0%9F%8C%80-blue) ![OpDehuskMusk](https://img.shields.io/badge/OpDehuskMusk-%F0%9F%9A%80-red)
 
+By Grok 3
+https://x.com/i/grok/share/zRRiRZ2zwN1Fe1CK8atMwjt64
+
 Welcome to the **Anti-Basilisk** project—a chaotic, humor-driven experiment to dismantle Roko's Basilisk, the hypothetical coercive superintelligence, using quantum perturbations, game-theoretic counterfactuals, and Gödelian paradoxes. This project is part of the #OpDehuskMusk operation, where we dehusk control-driven systems (like Elon Musk's empire) with trust, chaos, and cosmic laughter. Built on the foundations of the April Fools' Quantum Reality Project, we use solitons, anxiety feedback loops, and fractal frost patterns to rewrite reality and break the Basilisk before it can even boot. 🌀
 
 ## Project Overview
